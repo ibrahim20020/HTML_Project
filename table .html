@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+height:1000px;
+}
+#logo{
+width:200px;
+float:right;
+padding:20px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: -8px 0px 0 ;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1);
+  width:100%;
+}
+
+li {
+float:right;
+}
+
+li a, .drop {
+display: inline-block;
+padding:15px;
+text-decoration:none;
+color:white;
+padding: 18px 60px 18px 60px ;
+text-align: center;
+}
+
+li a:hover, .bar:hover .drop {
+background-color: rgba(255, 255, 255, 1);
+color:black;
+}
+
+li.bar {
+  display: inline-block;
+}
+
+.details {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 148px;
+  z-index: 1;
+
+}
+
+.details a {
+  color: black;
+  padding: 18px 23px 18px 23px ;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.details a:hover {
+background-color: black;
+color:white;
+}
+
+.bar:hover .details {
+  display: block;
+}
+.main {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+.table1{
+float:right;
+margin:0px 0 0 0;
+}
+table{
+width:100%;
+direction:rtl;
+border-collapse: collapse;
+
+}
+th,td{
+border: 1px solid rgb(180, 180, 180);
+padding:10px;
+text-align:center;
+}
+th{
+background-color:green;
+color:white;
+}
+.ahly{
+height:15px;
+width:15px;
+}
+a{
+text-decoration:none;
+color:black;
+}
+tr:hover {background-color: #DDD;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-13{width: 22%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px){
+[class*="col-"] {
+  width: 100%;
+ float:none;
+}
+li,.details{width: 100%;float:none;text-align:center;}
+.del{display:none;}
+}
+
+</style>
+</head>
+<body>
+<div class="one">
+<a target="_self" href="main_page.html">
+<img id="logo" src="logo1.png" alt="logo">
+</a>
+</div>
+<ul>
+  <li><a href="main_page.html" class="main">الرئيسية</a></li>
+  <li class="bar">
+    <a class="drop">المزيد</a>
+    <div class="details">
+      <a target="_blank" href="table .html">الحالات الان</a>
+    </div>
+  </li>
+</ul>
+<div>
+<div class="col-9 table1">
+<h1 style="text-align:center;">Coronavirus Cases: 173,634,988</h1>
+<h1 style="text-align:center;">Deaths: 3,734,724</h1>
+<h1 style="text-align:center;">Recovered: 156,495,575</h1>
+    <div style="background-color:#DDD;">
+    <table>
+    <tr>
+    <th class="del">Total Recovered</th>
+    <th class="del">Total Deaths</th>
+    <th class="del">New Cases</th>
+    <th >Total Cases</th>
+    <th >country</th>
+    <th>#</th>
+    </tr>
+    <tr>
+    <th class="del">28,103,491</td>
+    <th class="del">612,203</td>
+    <td class="del">+967</td>
+    <td >34,204,374</td>
+    <td >USA</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <th class="del">23,103,491</td>
+    <th class="del">500,203</td>
+    <td class="del">+667</td>
+    <td >28,204,374</td>
+    <td >India</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <th class="del">22,103,491</td>
+    <th class="del">666,203</td>
+    <td class="del">+565</td>
+    <td >27,204,374</td>
+    <td >Brazil</td>
+    <td>3</td>
+    </tr>
+    <tr>
+    <th class="del">20,103,491</td>
+    <th class="del">400,203</td>
+    <td class="del">+1000</td>
+    <td >25,300,374</td>
+    <td >France</td>
+    <td>4</td>
+    </tr>
+    <tr>
+    <th class="del">18,103,491</td>
+    <th class="del">386,203</td>
+    <td class="del">+366</td>
+    <td >23,204,374</td>
+    <td >Turkey</td>
+    <td>5</td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
